@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "title": "Avengers: Endgame",
+    "poster": "https://image.tmdb.org/t/p/original/ulzhLuWrPK07P1YkdWQLZnQh1JL.jpg",
+    "description": "After the devastating events of Infinity War, the Avengers assemble once more to reverse Thanos' actions and restore balance to the universe.",
+    "genre": "Action, Adventure, Sci-Fi",
+    "cast": "Robert Downey Jr., Chris Evans, Scarlett Johansson",
+    "rating": "8.4/10"
+  },
+  {
+     "id": 2,
+    "title": "The Dark Knight",
+    "poster": "https://image.tmdb.org/t/p/original/qJ2tW6WMUDux911r6m7haRef0WH.jpg",
+    "description": "Batman faces his greatest test when the Joker unleashes chaos upon Gotham City, challenging his sense of justice and morality.",
+    "genre": "Action, Crime, Drama",
+    "cast": "Christian Bale, Heath Ledger, Aaron Eckhart",
+    "rating": "9.0/10"
+  },
+  {
+    "id": 3,
+    "title": "Doctor Strange in the Multiverse of Madness",
+    "poster": "https://image.tmdb.org/t/p/original/wRnbWt44nKjsFPrqSmwYki5vZtF.jpg",
+    "description": "Doctor Strange embarks on a journey through the multiverse with new and old allies to confront a mysterious new adversary.",
+    "genre": "Action, Adventure, Fantasy",
+    "cast": "Benedict Cumberbatch, Elizabeth Olsen, Chiwetel Ejiofor",
+    "rating": "7.4/10"
+  },
+  {
+    "id": 4,
+    "title": "The Dark Knight",
+    "poster": "https://image.tmdb.org/t/p/original/qJ2tW6WMUDux911r6m7haRef0WH.jpg",
+    "description": "Batman faces his greatest test when the Joker unleashes chaos upon Gotham City, challenging his sense of justice and morality.",
+    "genre": "Action, Crime, Drama",
+    "cast": "Christian Bale, Heath Ledger, Aaron Eckhart",
+    "rating": "9.0/10"
+  },
+  {
+    "id": 5,
+    "title": "Avatar: The Way of Water",
+    "poster": "https://image.tmdb.org/t/p/original/t6HIqrRAclMCA60NsSmeqe9RmNV.jpg",
+    "description": "Jake Sully and Neytiri must protect their family from a returning threat, leading them to explore Pandora’s oceans.",
+    "genre": "Action, Adventure, Fantasy",
+    "cast": "Sam Worthington, Zoe Saldana, Sigourney Weaver",
+    "rating": "7.7/10"
+  },
+  {
+    "id": 6,
+    "title": "Titanic",
+    "poster": "https://image.tmdb.org/t/p/original/9xjZS2rlVxm8SFx8kPC3aIGCOYQ.jpg",
+    "description": "A young couple from different social backgrounds fall in love aboard the ill-fated RMS Titanic.",
+    "genre": "Drama, Romance",
+    "cast": "Leonardo DiCaprio, Kate Winslet, Billy Zane",
+    "rating": "7.9/10"
+  },
+  {
+    "id": 7,
+    "title": "Spider-Man: No Way Home",
+    "poster": "https://image.tmdb.org/t/p/original/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg",
+    "description": "Peter Parker’s identity is revealed, forcing him to seek help from Doctor Strange, but things take a dangerous turn across universes.",
+    "genre": "Action, Adventure, Fantasy",
+    "cast": "Tom Holland, Zendaya, Benedict Cumberbatch",
+    "rating": "8.3/10"
+  },
+  {
+    "id": 8,
+    "title": "Joker",
+    "poster": "https://image.tmdb.org/t/p/original/udDclJoHjfjb8Ekgsd4FDteOkCU.jpg",
+    "description": "A mentally troubled comedian embarks on a downward spiral that leads to the creation of an infamous criminal mastermind.",
+    "genre": "Crime, Drama, Thriller",
+    "cast": "Joaquin Phoenix, Robert De Niro, Zazie Beetz",
+    "rating": "8.5/10"
+  },
+  {
+    "id": 9,
+    "title": "Black Panther: Wakanda Forever",
+    "poster": "https://image.tmdb.org/t/p/original/sv1xJUazXeYqALzczSZ3O6nkH75.jpg",
+    "description": "The people of Wakanda fight to protect their nation after the death of King T’Challa, facing new enemies and challenges.",
+    "genre": "Action, Adventure, Drama",
+    "cast": "Letitia Wright, Angela Bassett, Tenoch Huerta",
+    "rating": "7.2/10"
+  },
+  {
+    "id": 10,
+    "title": "Doctor Strange in the Multiverse of Madness",
+    "poster": "https://image.tmdb.org/t/p/original/wRnbWt44nKjsFPrqSmwYki5vZtF.jpg",
+    "description": "Doctor Strange embarks on a journey through the multiverse with new and old allies to confront a mysterious new adversary.",
+    "genre": "Action, Adventure, Fantasy",
+    "cast": "Benedict Cumberbatch, Elizabeth Olsen, Chiwetel Ejiofor",
+    "rating": "7.4/10"
+  }
+]
