@@ -1,7 +1,7 @@
 import React from 'react'
 import { Route, Routes, useLocation } from 'react-router-dom'
 import Home from './pages/Home'
-import Movie from './pages/Movie'
+
 
 import Profile from './pages/Profile'
 import Navbar from './components/Navbar'
@@ -18,6 +18,7 @@ import Login from './pages/Login'
 import EventsPage from './pages/EventsPage'
 import PaymentPage from './pages/PaymentPage'
 import PaymentSuccess from './pages/PaymentSuccess'
+import ProtectedRoute from './pages/ProtectedRoute'
 
 const App = () => {
   const location = useLocation();
@@ -29,10 +30,14 @@ const App = () => {
         {!noNavbar.includes(location.pathname) && <Navbar />}
         <div className="pt-16">
           <Routes>
-            <Route path='/' element={<Home />} />
-            <Route path='/movies' element={<Movie />} />
+            <Route path='/' element={
+               <ProtectedRoute>
+                <Home />
+               </ProtectedRoute>} />
+          
             <Route path="/events" element={<EventsPage />} />
-            <Route path='/profile' element={<Profile />}>
+            <Route path='/profile' element={
+               <ProtectedRoute><Profile /></ProtectedRoute>}>
               <Route path='settings' element={<Settings />} />
               <Route path='orders' element={<Order />} />
             </Route>

@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
 
@@ -8,6 +8,11 @@ const Login = () => {
     const [password, setPassword] = useState('')
     const [error, setError] = useState('')
     const navigate = useNavigate()
+
+    useEffect(()=>{
+        if(localStorage.getItem('isLoggedIn')=== 'true')
+            navigate('/')
+    },[navigate])
 
 
     const handlesubmit = (e) =>{
@@ -23,6 +28,7 @@ const Login = () => {
         if(
            storeuser && storeuser.email === email && storeuser.password === password
         ) {
+             localStorage.setItem('isLoggedIn', 'true'); 
             setError('')
             alert(`Welcome Back, ${storeuser.name}`)
              navigate('/')

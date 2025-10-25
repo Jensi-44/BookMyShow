@@ -26,7 +26,7 @@ const Search = () => {
         }, [searchterm, selectedGenre]),
 
         <div className='max-w-6xl mx-auto p-6'>
-            <input type='search' placeholder='Search Movie..' className='p-2 w-70' onChange={(e) => setSearchterm(e.target.value)} value={searchterm} />
+            <input type='search' placeholder='Search Movie..' className='p-2 w-70 border border-black rounded-lg m-3' onChange={(e) => setSearchterm(e.target.value)} value={searchterm} />
 
             <select value={selectedGenre} onChange={(e) => setselectedGenre(e.target.value)}>
                 <option>All</option>
@@ -42,7 +42,7 @@ const Search = () => {
                             <img src={movie.poster} className='rounded-lg mb-2 hover:scale-105 transition' onClick={() => navigate(`/moviedetail/${movie.id}`)} />
                             <h3 className='text-black text-lg'>{movie.title}</h3>
                             <p className='text-black text-sm'>{movie.year}</p>
-                        </div>
+                        </div> 
                     ))
                 ) : (
 
