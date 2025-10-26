@@ -3,53 +3,85 @@ import Navbar from '../components/Navbar'
 import movies from '../data/movies.json'
 import { useNavigate, useParams } from 'react-router-dom'
 
-
 const MovieDetails = () => {
-    const {id} = useParams()
-    const movie = movies.find((m)=>m.id === parseInt(id))
-    const navigate = useNavigate()
+  const { id } = useParams()
+  const movie = movies.find((m) => m.id === parseInt(id))
+  const navigate = useNavigate()
 
-    const handleclick = () =>{
-      navigate('/BookingPage')
-    }
+  const handleclick = () => {
+    navigate('/BookingPage')
+  }
+
   return (
     <>
    
-    <div className='bg-white min-h-screen'>
-      <div className='relative'>
-        <img src={movie.poster} className='w-full h-80 md:h-150 object-cover'/>
-        <div className='absolute left-0 top-0 flex items-center w-full h-full justify-center bg-black/80'>
+      <div className='bg-white min-h-screen'>
+        <div className='relative'>
+         
+          <img
+            src={movie.poster}
+            className='w-full h-64 sm:h-80 md:h-[500px] object-cover'
+          />
+          <div className='absolute left-0 top-0 flex items-center w-full h-full justify-center bg-black/80'>
 
-        <div className='flex'>
-            <img src={movie.poster} className='w-60 h-90 absolute top-37 left-30 rounded-xl'/>
-            <h1 className='text-white text-4xl font-semibold absolute left-95 top-37'>{movie.title}</h1>
-            <div className='bg-black/70 px-6 py-4 w-80 rounded-lg absolute left-95 top-55 flex justify-between'>
-            <p className='text-white'>{movie.rating}</p>
-            <button className='px-2 py-2 bg-white rounded-lg'>Rate Now</button>
-            </div>
-            <p className='text-white font-semibold left-95 absolute'>{movie.genre}</p>
+          
+            <div className='flex flex-col md:flex-row items-center md:items-start gap-6 md:gap-12 relative'>
 
-            <button className='bg-white px-9 py-3 rounded-lg absolute top-90 left-95 font-semibold' onClick={handleclick}>Book tickets</button>
             
-        </div>
-        </div>
-      </div>
+              <img
+                src={movie.poster}
+                className='w-40 sm:w-48 md:w-60 h-60 sm:h-72 md:h-90 rounded-xl object-cover shadow-lg md:absolute md:top-[10px] md:left-[90px]'
+              />
 
-      <div className='bg-black/70 m-4 rounded-lg'>
-        <h1 className='text-black font-semibold text-xl p-4 font-semibold m-2'>About the Movie</h1>
-        <p className='text-black  absolute left-4 text-gray-900'>{movie.description}</p> 
-      </div>
-      <h1 className='text-black font-semibold text-xl p-4 font-semibold bg-black/70 m-4 mt-[2em] rounded-lg m-2'>Cast</h1>
-      <p className='text-black absolute left-4 text-gray-900'>{movie.cast}</p>
-      
-      </div>
-      
-      
+             
+              <div className='text-center md:text-left mt-4 md:mt-0 md:ml-[350px] space-y-4'>
+                <h1 className='text-white text-2xl sm:text-3xl md:text-4xl font-semibold'>
+                  {movie.title}
+                </h1>
+
+                <div className='bg-black/70 px-4 sm:px-6 py-3 w-60 sm:w-72 md:w-80 rounded-lg flex justify-between mx-auto md:mx-0'>
+                  <p className='text-white'>{movie.rating}</p>
+                  <button className='px-3 py-1 bg-white rounded-lg text-sm sm:text-base'>
+                    Rate Now
+                  </button>
+                </div>
+
+                <p className='text-white font-semibold text-sm sm:text-base'>
+                  {movie.genre}
+                </p>
+
+                <button
+                  className='bg-white px-6 sm:px-9 py-2 sm:py-3 rounded-lg font-semibold mt-2 md:mt-6'
+                  onClick={handleclick}
+                >
+                  Book tickets
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
      
+        <div className='bg-black/10 m-4 rounded-lg p-4 sm:p-6'>
+          <h1 className='text-black font-semibold text-lg sm:text-xl mb-2'>
+            About the Movie
+          </h1>
+          <p className='text-gray-800 leading-relaxed text-sm sm:text-base'>
+            {movie.description}
+          </p>
+        </div>
 
+   
+        <div className='bg-black/10 m-4 rounded-lg p-4 sm:p-6'>
+          <h1 className='text-black font-semibold text-lg sm:text-xl mb-2'>
+            Cast
+          </h1>
+          <p className='text-gray-800 leading-relaxed text-sm sm:text-base'>
+            {movie.cast}
+          </p>
+        </div>
+      </div>
     </>
-    
-    
   )
 }
 
